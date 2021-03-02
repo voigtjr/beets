@@ -1076,7 +1076,7 @@ def list_func(lib, opts, args):
     list_items(lib, decargs(args), opts.album)
 
 
-list_cmd = ui.Subcommand(u'list', help=u'query the library', aliases=(u'ls',))
+list_cmd = ui.Subcommand(u'list', help=u'query the library', aliases=(u'ls', u'l'))
 list_cmd.parser.usage += u"\n" \
     u'Example: %prog -f \'$album: $title\' artist:beatles'
 list_cmd.parser.add_all_common_options()
